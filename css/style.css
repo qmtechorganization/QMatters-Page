@@ -808,7 +808,7 @@
 
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: #FFF;
     transition: 0.5s;
 }
 
@@ -817,7 +817,7 @@
 }
 
 .footer .footer-item a:hover {
-    color: var(--bs-primary);
+    color: #FFF;
 }
 
 .footer .footer-item .footer-btn a,

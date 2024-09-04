@@ -238,7 +238,7 @@ a {
 }
 
 a:hover {
-    color: #014ca1
+    color: #ffffff
 }
 
 a:not([href]):not([class]),
@@ -8299,6 +8299,10 @@ fieldset:disabled .btn {
 
 .text-primary {
     color: #015fc9 !important
+}
+
+.text-QMBlue {
+    color: #041635 !important
 }
 
 .text-QMGreen {
