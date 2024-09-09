@@ -185,14 +185,14 @@
         display: flex;
         margin-top: 20px;
         padding-bottom: 20px;
-        background: var(--bs-light);
+        background: #041635;
         border-radius: 10px;
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 8px 15px;
-        border: 1px solid var(--bs-primary);
-        color: var(--bs-primary);
+        border: 0.5px solid #FFF;
+        color: #FFF;
     }
 }
 
@@ -233,7 +233,7 @@
     .navbar .navbar-nav .nav-btn {
         width: 100%;
         display: flex;
-        margin-left: auto;
+        margin-left: 20px;
     }
 
     .navbar .nav-item .dropdown-menu {
