@@ -8,5 +8,10 @@ namespace Q_MATTERS.Controllers
         {
             return View();
         }
+        public ActionResult SendContactEmail(string name, string email, string message)
+        {
+            // Send email
+            return RedirectToAction("Index");
+        }
     }
 }
