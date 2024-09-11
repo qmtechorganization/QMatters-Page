@@ -27,7 +27,7 @@
                         ¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Ya sea que estés interesado en nuestros servicios,
                         necesites soporte, o simplemente quieras conocer más sobre lo que hacemos.
                     </p>
-                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <form action="/Contact/SendContactEmail" method="POST">
                         <div class="row g-3">
                             <input type="hidden" name="access_key" value="97e0aedb-8570-4180-a3fc-723f43989ace">
                             <div class="col-lg-12 col-xl-6">
@@ -44,13 +44,13 @@
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
-                                    <input type="phone" class="form-control border-0" id="phone" name="phone" placeholder="Telefono">
+                                    <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Telefono">
                                     <label for="phone">Telefono</label>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="project" name="project" placeholder="Empresa">
+                                    <input type="text" class="form-control border-0" id="project" name="company" placeholder="Empresa">
                                     <label for="project">Nombre de tu Empresa</label>
                                 </div>
                             </div>
