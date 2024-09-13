@@ -84,13 +84,14 @@
                         <a asp-action="Index" asp-controller="Liaison" class="nav-item nav-link">Liaison</a>
                         <a asp-action="Index" asp-controller="Contact" class="nav-item nav-link">Contact</a>
                         <div class="dropdown ms-qm">
-                            <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">
+                            <a class="dropdown-toggle text-white" data-bs-toggle="dropdown">
                                 <small>
-                                    <i class="fas fa-globe-europe text-white me-2"></i> Spanish
+                                    <i class="fas fa-globe-europe text-white me-2"></i><i id="selectedLanguage"></i>
                                 </small>
                             </a>
                             <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item">English</a>
+                                <a onclick="changeLanguage('en')" class="dropdown-item">English</a>
+                                <a onclick="changeLanguage('es')" class="dropdown-item">Spanish</a>
                             </div>
                         </div>
                         <div class="nav-btn px-3">
@@ -196,6 +197,8 @@
     <script src="~/lib/counterup/counterup.min.js"></script>
     <script src="~/lib/lightbox/js/lightbox.min.js"></script>
     <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/language/Language.js"></script>
+
 
 
     <!-- Template Javascript -->

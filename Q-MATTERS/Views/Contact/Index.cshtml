@@ -1,7 +1,7 @@
-﻿        <!-- Header Start -->
+﻿<!-- Header Start -->
 <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
-        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contáctanos</h4>
+        <h4 id="contactHeaderTitle" class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s" lang-attr="contactHeaderTitle">Contáctanos</h4>
     </div>
 </div>
 <!-- Header End -->
@@ -9,8 +9,8 @@
 <div class="container-fluid contact bg-light py-5">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-            <h4 class="text-QMBlue">Contáctanos</h4>
-            <h1 class="display-4 mb-4">Si requieres nuestros servicios</h1>
+            <h4 class="text-QMBlue" lang-attr="contactSubTitle">Contáctanos</h4>
+            <h1 class="display-4 mb-4" lang-attr="contactMainTitle">Si requieres nuestros servicios</h1>
         </div>
         <div class="row g-5">
             <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
@@ -22,8 +22,8 @@
             </div>
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                 <div>
-                    <h4 class="text-QMBlue">Envia tu Mensaje</h4>
-                    <p class="mb-4">
+                    <h4 class="text-QMBlue" lang-attr="formTitle">Envía tu Mensaje</h4>
+                    <p class="mb-4" lang-attr="formDescription">
                         ¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Ya sea que estés interesado en nuestros servicios,
                         necesites soporte, o simplemente quieras conocer más sobre lo que hacemos.
                     </p>
@@ -33,43 +33,43 @@
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control border-0" id="name" name="name" placeholder="Nombre">
-                                    <label for="name">Nombre</label>
+                                    <label for="name" lang-attr="nameLabel">Nombre</label>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control border-0" id="email" name="email" placeholder="Correo">
-                                    <label for="email">Correo</label>
+                                    <label for="email" lang-attr="emailLabel">Correo</label>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Telefono">
-                                    <label for="phone">Telefono</label>
+                                    <label for="phone" lang-attr="phoneLabel">Teléfono</label>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control border-0" id="project" name="company" placeholder="Empresa">
-                                    <label for="project">Nombre de tu Empresa</label>
+                                    <label for="project" lang-attr="companyLabel">Nombre de tu Empresa</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Asunto">
-                                    <label for="subject">Asunto</label>
+                                    <label for="subject" lang-attr="subjectLabel">Asunto</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height: 120px"></textarea>
-                                    <label for="message">Mensaje</label>
+                                    <label for="message" lang-attr="messageLabel">Mensaje</label>
                                 </div>
 
                             </div>
                             <input type="hidden" name="redirect" value="https://web3forms.com/success">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary w-100 py-3">Enviar Mensaje</button>
+                                <button type="submit" class="btn btn-primary w-100 py-3" lang-attr="submitButton">Enviar Mensaje</button>
                             </div>
                         </div>
                     </form>
@@ -84,8 +84,8 @@
                                     <i class="fas fa-map-marker-alt fa-2x"></i>
                                 </div>
                                 <div>
-                                    <h4>Dirección</h4>
-                                    <p class="mb-0"></p>
+                                    <h4 lang-attr="addressLabel">Dirección</h4>
+                                    <p class="mb-0" lang-attr="addressValue"></p>
                                 </div>
                             </div>
                         </div>
@@ -95,8 +95,8 @@
                                     <i class="fas fa-envelope fa-2x"></i>
                                 </div>
                                 <div>
-                                    <h4>Correo</h4>
-                                    <p class="mb-0">contact@q-matters.com </p>
+                                    <h4 lang-attr="emailContactLabel">Correo</h4>
+                                    <p class="mb-0" lang-attr="emailContactValue">contact@q-matters.com</p>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +106,8 @@
                                     <i class="fa fa-phone-alt fa-2x"></i>
                                 </div>
                                 <div>
-                                    <h4>Telefono</h4>
-                                    <p class="mb-0">+52 (899) 259 3580</p>
+                                    <h4 lang-attr="phoneContactLabel">Teléfono</h4>
+                                    <p class="mb-0" lang-attr="phoneContactValue">+52 (899) 259 3580</p>
                                 </div>
                             </div>
                         </div>
@@ -117,8 +117,8 @@
                                     <i class="fab fa-firefox-browser fa-2x"></i>
                                 </div>
                                 <div>
-                                    <h4>Pagina Web</h4>
-                                    <p class="mb-0">https://q-matters.com/</p>
+                                    <h4 lang-attr="websiteLabel">Página Web</h4>
+                                    <p class="mb-0" lang-attr="websiteValue">https://q-matters.com/</p>
                                 </div>
                             </div>
                         </div>

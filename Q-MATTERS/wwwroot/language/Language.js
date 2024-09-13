@@ -1,0 +1,213 @@
+﻿
+
+async function gettranslation  ()  {
+
+    const data = await fetch('/language/translations.json')
+    const t = await data.json()
+        
+    return t.translate
+}
+
+
+
+const getLangSelected = (selec = null) => {
+    // Get local storge
+    //return document.getElementById('lang').value;
+
+    return selec && 'esp'
+}
+
+async function renderLanguege(lselect) {
+
+    const elements = document.querySelectorAll('[lang-attr]')
+
+    const sL = getLangSelected(lselect)
+
+    const transldd = await gettranslation()
+    console.log('todo x cuilpa de ;luis',transldd)
+
+    for (const el of elements) {
+        const trans = transldd.find(f => f.lang_attr == el.getAttribute('lang-attr'))
+
+        console.log({ value: trans[lselect], trans, el, lselect })
+
+        if (trans)
+            el.textContent = trans[lselect]
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded',async () => {
+    console.log('Starting')
+
+    await renderLanguege()
+})
+
+//document.getElementById('lang').addEventListener('change', renderLanguege)
+
+
+
+//$(document).ready(function () {
+//    $(".header-carousel").on('initialized.owl.carousel', function (event) {
+//        initLanguage();
+//    });
+//});
+
+
+//// Función para establecer una cookie
+//function setCookie(name, value, days) {
+//    var expires = "";
+//    if (days) {
+//        var date = new Date();
+//        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+//        expires = "; expires=" + date.toUTCString();
+//    }
+//    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+//}
+
+//// Función para obtener una cookie
+//function getCookie(name) {
+//    var nameEQ = name + "=";
+//    var ca = document.cookie.split(';');
+//    for (var i = 0; i < ca.length; i++) {
+//        var c = ca[i];
+//        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+//        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+//    }
+//    return null;
+//}
+
+//// Función para cambiar el idioma
+//function changeLanguage(language) {
+//    setCookie('language', language, 30);
+
+//    // Actualizar el texto del idioma seleccionado en el dropdown
+//    var selectedLanguageText = language === 'en' ? 'English' : 'Spanish';
+//    document.getElementById('selectedLanguage').textContent = selectedLanguageText;
+
+//    fetch('/language/translations.json')
+//        .then(response => {
+//            if (!response.ok) {
+//                throw new Error('Error en la respuesta: ' + response.statusText);
+//            }
+//            return response.json();
+//        })
+//        .then(translationsJSON => {
+//            var translations = translationsJSON[language];
+
+//            // Actualiza los textos en el carrusel
+//            var carouselItems = document.querySelectorAll('.header-carousel .carousel-caption');
+//            carouselItems.forEach(item => {
+//                item.querySelector('#carouselDescription').textContent = translations.carousel.description;
+
+//                var contactButton = item.querySelector('#contactButton a');
+//                if (contactButton) {
+//                    contactButton.textContent = translations.carousel.contact_button;
+//                }
+//            });
+
+//            // Actualiza los textos en la sección "About"
+//            document.getElementById('whoWeAreTitle').textContent = translations.about.who_we_are_title;
+//            document.getElementById('whoWeAreDescription').textContent = translations.about.who_we_are_description;
+//            document.getElementById('ourReputation').textContent = translations.about.our_reputation;
+//            document.getElementById('reputation1').textContent = translations.about.reputation_1;
+//            document.getElementById('reputation2').textContent = translations.about.reputation_2;
+//            // Actualiza los textos en la sección "Philosophy"
+//            document.getElementById('philosophyTitle').textContent = translations.philosophy.title;
+//            document.getElementById('philosophyDescription').textContent = translations.philosophy.description;
+
+//            //// Actualiza los textos en la sección "Principle"
+//            document.getElementById('principleTitle').textContent = translations.principle.title;
+//            document.getElementById('principleDescription').textContent = translations.principle.description;
+
+//            //// Actualiza los textos en la sección "Success"
+//            document.getElementById('successTitle').textContent = translations.success.title;
+//            document.getElementById('successDescription').textContent = translations.success.description;
+
+//            //// Actualiza los textos en la sección "Services Linkage"
+//            document.getElementById('servicesLinkageTitle').textContent = translations.services_linkage.title;
+//            document.getElementById('servicesLinkageDescription').textContent = translations.services_linkage.description;
+
+//            //// Actualiza los textos en la sección "Services Inspection"
+//            document.getElementById('servicesInspectionTitle').textContent = translations.services_inspection.title;
+//            document.getElementById('servicesInspectionDescription').textContent = translations.services_inspection.description;
+
+//            //// Actualiza los textos en la sección "Services Training"
+//            document.getElementById('servicesTrainingTitle').textContent = translations.services_training.title;
+//            document.getElementById('servicesTrainingDescription').textContent = translations.services_training.description;
+
+//            //// Actualiza los botones
+//            document.getElementById('getStartedButton').textContent = translations.buttons.get_started;
+//            document.getElementById('getStartedButton2').textContent = translations.buttons.get_started;
+//            document.getElementById('getStartedButton3').textContent = translations.buttons.get_started;
+
+//            // Actualiza los textos en la sección "Contact"
+//            document.getElementById('contactHeaderTitle').textContent = translations.contact.header.title;
+//            document.getElementById('contactHeaderTitle2').textContent = translations.contact.header.title;
+//            document.getElementById('contactSection1Title').textContent = translations.contact.section_1.title;
+//            document.getElementById('contactMessage').textContent = translations.contact.message.question;
+
+//            //var form = translations.contact.form;
+//            //document.getElementById('formName').placeholder = form.name;
+//            //document.getElementById('formEmail').placeholder = form.email;
+//            //document.getElementById('formPhone').placeholder = form.phone;
+//            //document.getElementById('formProject').placeholder = form.project;
+//            //document.getElementById('formSubject').placeholder = form.subject;
+//            //document.getElementById('formMessage').placeholder = form.message;
+//            //document.getElementById('formSubmitButton').textContent = form.submit_button;
+
+//        })
+//        .catch(error => console.error('Error al cargar el archivo JSON:', error));
+//}
+
+
+
+
+
+//// Función para inicializar el idioma basado en la cookie guardada
+//function initLanguage() {
+//    var savedLanguage = getCookie('language') || 'es'; // Por defecto, español
+//    changeLanguage(savedLanguage);
+
+//    // Actualizar el texto del idioma seleccionado en el dropdown
+//    var selectedLanguageText = savedLanguage === 'en' ? 'English' : 'Spanish';
+//    document.getElementById('selectedLanguage').textContent = selectedLanguageText;
+//}
+
+//document.addEventListener('DOMContentLoaded', function () {
+//    initLanguage();
+//});
+
+
+
+
+
+////document.getElementById('reputation3').textContent = translations.about.reputation_3;
+
+
+
+
+////// Actualiza los textos en la sección "Inspection Services"
+////document.getElementById('inspectionServicesHeaderTitle').textContent = translations.inspection_services.header.title;
+////document.getElementById('inspectionServicesSection1Title').textContent = translations.inspection_services.section_1.title;
+////document.getElementById('inspectionServicesSection1Supervision').textContent = translations.inspection_services.section_1.supervision;
+////document.getElementById('inspectionServicesSection1Report').textContent = translations.inspection_services.section_1.report;
+////document.getElementById('inspectionServicesSection1ContactButton').textContent = translations.inspection_services.section_1.contact_button;
+
+////document.getElementById('inspectionServicesSection2Title').textContent = translations.inspection_services.section_2.title;
+////document.getElementById('inspectionServicesSection2Support247').textContent = translations.inspection_services.section_2.support_24_7;
+////document.getElementById('inspectionServicesSection2EngineeringSpecsFocus').textContent = translations.inspection_services.section_2.engineering_specs_focus;
+////document.getElementById('inspectionServicesSection2EngineeringTrainingSupervisors').textContent = translations.inspection_services.section_2.engineering_training_supervisors;
+////document.getElementById('inspectionServicesSection2WorkInstructions').textContent = translations.inspection_services.section_2.work_instructions;
+
+////// Actualiza los textos en la sección "Linkage Services"
+////document.getElementById('linkageServicesHeaderTitle').textContent = translations.linkage_services.header.title;
+////document.getElementById('linkageServicesSection1Title').textContent = translations.linkage_services.section_1.title;
+////document.getElementById('linkageServicesSection1EngineersExperienced').textContent = translations.linkage_services.section_1.engineers_experienced;
+////document.getElementById('linkageServicesSection1ProvenSuccess').textContent = translations.linkage_services.section_1.proven_success;
+////document.getElementById('linkageServicesSection1AppliedEngineering').textContent = translations.linkage_services.section_1.applied_engineering;
+////document.getElementById('linkageServicesSection1TechnicalSpecsFocus').textContent = translations.linkage_services.section_1.technical_specs_focus;
+////document.getElementById('linkageServicesSection1TechnicalSupport').textContent = translations.linkage_services.section_1.technical_support;
+////document.getElementById('linkageServicesSection1ClientNegotiations').textContent = translations.linkage_services.section_1.client_negotiations;
+////document.getElementById('linkageServicesSection1ProblemResolution').textContent = translations.linkage_services.section_1.problem_resolution;
+////document.getElementById('linkageServicesSection1ContactButton').textContent = translations.linkage_services.section_1.contact_button;

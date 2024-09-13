@@ -1,0 +1,280 @@
+//{
+//  "es": {
+//    "carousel": {
+//      "title": "Quality Matters",
+//      "description": "Servicios de Calidad Integrada e Ingeniería de campo",
+//      "contact_button": "Contáctanos"
+//    },
+//    "about": {
+//      "who_we_are_title": "¿Quiénes somos?",
+//      "who_we_are_description": "Un grupo de profesionales bilingües, expertos en diferentes campos, capaces de administrar correctamente sus proyectos.",
+//      "our_reputation": "Profesionales con experiencia y solido conocimiento en Calidad, Manufactura, Ingeniería, y Mejora Continua.",
+//      "reputation_1": "Proporcionar entrenamiento de alta calidad y alto impacto para las personas y sus empresas.",
+//      "reputation_2": "Apoyo enfocado en proyectos específicos de inspección, incluido re-trabajo de piezas según especificaciones."
+//    },
+//    "philosophy": {
+//      "title": "Nuestra Filosofía",
+//      "description": "Proporcionar servicios profesionales y de entrenamiento, buscando desarrollar competencias básicas desde el origen, como base de la cultura de la calidad."
+//    },
+//    "principle": {
+//      "title": "Nuestro Principio",
+//      "description": "Promover la integración de los Servicios de Gestión de la Calidad como clave del éxito de los clientes."
+//    },
+//    "success": {
+//      "title": "Clave del Éxito",
+//      "description": "Comprensión y respuesta rápidas a las necesidades del cliente, así como apoyo profesional adaptado a situaciones únicas."
+//    },
+//    "services_linkage": {
+//      "title": "Servicios de Enlace",
+//      "description": "Nuestro equipo de ingenieros experimentados cuenta con un historial demostrado de proyectos completados con éxito y centrados en el cumplimiento de las especificaciones de ingeniería. Ofrecemos un excelente soporte técnico y podemos negociar con los clientes cuando sea necesario. Además, nos destacamos en la resolución de problemas y la entrega de soluciones eficaces para garantizar la ejecución del proyecto sin problemas y la satisfacción del cliente. Para garantizar una ejecución fluida del proyecto y la satisfacción del cliente."
+//    },
+//    "services_inspection": {
+//      "title": "Servicios de Inspección",
+//      "description": "Podemos proporcionarle equipos completos o inspectores individuales especializados para satisfacer sus necesidades específicas. Nuestro personal puede participar desde el primer día o intercalarse «a lo largo del camino» para mejorar el proceso. Nuestros inspectores cuentan con una importante experiencia previa que opera y mantiene activos similares. Aportan a cada proyecto una riqueza de conocimientos en múltiples disciplinas, códigos industriales, normas industriales y normas específicas del cliente."
+//    },
+//    "services_training": {
+//      "title": "Servicios de Capacitación",
+//      "description": "Formación personalizada adaptada a las necesidades de cada cliente. Quality Matters asigna un Formador Profesional con experiencia demostrada. Formación desarrollada en Español e Inglés está disponible bajo petición. Desarrollo de Expertos en Formación Interna puede ser desarrollado por requerimiento del cliente. Se requerirá un presupuesto adicional."
+//    },
+//    "buttons": {
+//      "get_started": "Comencemos"
+//    },
+//    "contact": {
+//      "header": {
+//        "title": "Contáctanos"
+//      },
+//      "section_1": {
+//        "title": "Si requieres nuestros servicios"
+//      },
+//      "message": {
+//        "question": "¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Ya sea que estés interesado en nuestros servicios, necesites soporte, o simplemente quieras conocer más sobre lo que hacemos."
+//      },
+//      "form": {
+//        "name": "Nombre",
+//        "email": "Correo",
+//        "phone": "Telefono",
+//        "project": "Nombre de tu Empresa",
+//        "subject": "Asunto",
+//        "message": "Mensaje",
+//        "submit_button": "Enviar Mensaje"
+//      }
+//    },
+//    "inspection_services": {
+//      "header": {
+//        "title": "Servicios de Inspección"
+//      },
+//      "section_1": {
+//        "title": "Inspectores certificados, formados según las especificaciones del producto",
+//        "supervision": "Supervisión Focalizada",
+//        "report": "Informes enviados diariamente. Creados y revisados en el lugar, también pueden consultarse en la web de QM con previa solicitud.",
+//        "contact_button": "Contáctanos"
+//      },
+//      "section_2": {
+//        "title": "Personal especializado en Retrabajo",
+//        "support_24_7": "Soporte 24/7",
+//        "engineering_specs_focus": "Enfoque en las especificaciones de ingeniería",
+//        "engineering_training_supervisors": "Supervisores con formación en Ingeniería",
+//        "work_instructions": "Instrucciones de Trabajo"
+//      }
+//    },
+//    "linkage_services": {
+//      "header": {
+//        "title": "Servicios de Enlace"
+//      },
+//      "section_1": {
+//        "title": "Atención al cliente personalizada mediante ingeniería de campo en sitio",
+//        "engineers_experienced": "Ingenieros Experimentados",
+//        "proven_success": "Éxito demostrado en proyectos realizados",
+//        "applied_engineering": "Ingeniería aplicada",
+//        "technical_specs_focus": "Enfoque en las especificaciones técnicas",
+//        "technical_support": "Soporte técnico",
+//        "client_negotiations": "Negociaciones con clientes sobre casos concretos",
+//        "problem_resolution": "Resolución de problemas",
+//        "contact_button": "Contáctanos"
+//      }
+//    }
+//  },
+//  "en": {
+//    "carousel": {
+//      "title": "Quality Matters",
+//      "description": "Integrated Quality Management and Liaison Services.",
+//      "contact_button": "Contact Us"
+//    },
+//    "about": {
+//      "who_we_are_title": "Who We Are?",
+//      "who_we_are_description": "A team of bilingual professionals...",
+//      "our_reputation": "We have built our reputation by:",
+//      "reputation_1": "Providing high-quality training...",
+//      "reputation_2": "Focused inspection support...",
+//      "reputation_3": "Engineering Liaison support"
+//    },
+//    "philosophy": {
+//      "title": "Our Philosophy",
+//      "description": "Providing professional services and training..."
+//    },
+//    "principle": {
+//      "title": "Our Principle",
+//      "description": "Promoting the integration of Quality Management Services..."
+//    },
+//    "success": {
+//      "title": "Key to Success",
+//      "description": "Quick understanding and response to customer needs..."
+//    },
+//    "services_linkage": {
+//      "title": "Linkage Services",
+//      "description": "Our team of experienced engineers..."
+//    },
+//    "services_inspection": {
+//      "title": "Inspection Services",
+//      "description": "We can provide complete teams or specialized inspectors..."
+//    },
+//    "services_training": {
+//      "title": "Training Services",
+//      "description": "Customized training tailored to each client's needs..."
+//    },
+//    "buttons": {
+//      "get_started": "Get Started"
+//    },
+//    "contact": {
+//      "header": {
+//        "title": "Contact Us"
+//      },
+//      "section_1": {
+//        "title": "If you require our services"
+//      },
+//      "message": {
+//        "question": "Do you have any questions or need more information about our services? We are here to help! Whether you are interested in our services, need support, or simply want to know more about what we do."
+//      },
+//      "form": {
+//        "name": "Name",
+//        "email": "Email",
+//        "phone": "Phone",
+//        "project": "Company Name",
+//        "subject": "Subject",
+//        "message": "Message",
+//        "submit_button": "Send Message"
+//      }
+//    },
+//    "inspection_services": {
+//      "header": {
+//        "title": "Inspection Services"
+//      },
+//      "section_1": {
+//        "title": "Certified inspectors, trained according to product specifications",
+//        "supervision": "Focused Supervision",
+//        "report": "Reports sent daily. Created and reviewed on-site, they can also be accessed on the QM website upon request.",
+//        "contact_button": "Contact Us"
+//      },
+//      "section_2": {
+//        "title": "Specialized Rework Personnel",
+//        "support_24_7": "24/7 Support",
+//        "engineering_specs_focus": "Focus on Engineering Specifications",
+//        "engineering_training_supervisors": "Supervisors with Engineering Training",
+//        "work_instructions": "Work Instructions"
+//      }
+//    },
+//    "linkage_services": {
+//      "header": {
+//        "title": "Linkage Services"
+//      },
+//      "section_1": {
+//        "title": "Personalized customer service through on-site field engineering",
+//        "engineers_experienced": "Experienced Engineers",
+//        "proven_success": "Proven success in completed projects",
+//        "applied_engineering": "Applied Engineering",
+//        "technical_specs_focus": "Focus on technical specifications",
+//        "technical_support": "Technical Support",
+//        "client_negotiations": "Negotiations with clients on specific cases",
+//        "problem_resolution": "Problem Resolution",
+//        "contact_button": "Contact Us"
+//      }
+//    }
+//  }
+//}
+//https://medium.com/@nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505//
+
+
+{
+  "translate": [
+    {
+      "lang_attr": "contactHeaderTitle",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "contactSubTitle",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "contactMainTitle",
+      "eng": "If You Need Our Services",
+      "esp": "Si requieres nuestros servicios"
+    },
+    {
+      "lang_attr": "formTitle",
+      "eng": "Send Your Message",
+      "esp": "Envía tu Mensaje"
+    },
+    {
+      "lang_attr": "formDescription",
+      "eng": "Do you have any questions or need more information about our services? We are here to help! Whether you're interested in our services, need support, or just want to know more about what we do.",
+      "esp": "¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Ya sea que estés interesado en nuestros servicios, necesites soporte, o simplemente quieras conocer más sobre lo que hacemos."
+    },
+    {
+      "lang_attr": "nameLabel",
+      "eng": "Name",
+      "esp": "Nombre"
+    },
+    {
+      "lang_attr": "emailLabel",
+      "eng": "Email",
+      "esp": "Correo"
+    },
+    {
+      "lang_attr": "phoneLabel",
+      "eng": "Phone",
+      "esp": "Teléfono"
+    },
+    {
+      "lang_attr": "companyLabel",
+      "eng": "Your Company Name",
+      "esp": "Nombre de tu Empresa"
+    },
+    {
+      "lang_attr": "subjectLabel",
+      "eng": "Subject",
+      "esp": "Asunto"
+    },
+    {
+      "lang_attr": "messageLabel",
+      "eng": "Message",
+      "esp": "Mensaje"
+    },
+    {
+      "lang_attr": "submitButton",
+      "eng": "Send Message",
+      "esp": "Enviar Mensaje"
+    },
+    {
+      "lang_attr": "addressLabel",
+      "eng": "Address",
+      "esp": "Dirección"
+    },
+    {
+      "lang_attr": "emailContactLabel",
+      "eng": "Email",
+      "esp": "Correo"
+    },
+    {
+      "lang_attr": "phoneContactLabel",
+      "eng": "Phone",
+      "esp": "Teléfono"
+    },
+    {
+      "lang_attr": "websiteLabel",
+      "eng": "Website",
+      "esp": "Página Web"
+    }
+  ]
+}
