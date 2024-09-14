@@ -1,8 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<!-- Carousel Start -->
+﻿<!-- Carousel Start -->
 <div class="header-carousel owl-carousel">
     <div class="header-carousel-item bg-primaryqm">
         <div class="carousel-caption">
@@ -11,13 +7,11 @@
                     <div class="col-lg-7 animated fadeInLeft">
                         <div class="text-sm-center text-md-start">
                             <h4 class="text-white text-uppercase fw-bold mb-4"></h4>
-                            <h1 class="display-1 text-white mb-4">Quality Matters</h1>
-                            <p id="carouselDescription" class="mb-5 fs-5">
-
-                            </p>
+                            <h1 class="display-1 text-white mb-4" lang-attr="carouselTitle"></h1>
+                            <p id="carouselDescription" class="mb-5 fs-5" lang-attr="carouselDescription"></p>
                             <div id="contactButton" class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" asp-action="Index" asp-controller="Contact">
-                                    
+                                <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" asp-action="Index" asp-controller="Contact" lang-attr="contactButton">
+                                    Contáctanos
                                 </a>
                             </div>
                         </div>
@@ -41,14 +35,12 @@
             <div class="row g-5">
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="about-item-content bg-white rounded p-5 h-100">
-                        <h1 id="whoWeAreTitle" class="display-4 mb-4"></h1>
-                        <p id="whoWeAreDescription">
-
-                        </p>
-                        <p id="ourReputation">
-                        </p>
-                        <p class="text-dark"><i class="fa fa-check text-primary me-3"></i><a id="reputation1"></a></p>
-                        <p class="text-dark"><i class="fa fa-check text-primary me-3"></i><a id="reputation2"></a></p>
+                        <h1 id="whoWeAreTitle" class="display-4 mb-4" lang-attr="whoWeAreTitle"></h1>
+                        <p id="whoWeAreDescription" lang-attr="whoWeAreDescription"></p>
+                        <p lang-attr="reputationBuilding"></p>
+                        <p class="text-dark"><i class="fa fa-check text-primary me-3"></i><a lang-attr="trainingImpact"></a></p>
+                        <p class="text-dark"><i class="fa fa-check text-primary me-3"></i><a lang-attr="inspectionSupport"></a></p>
+                        <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i><a lang-attr="engineeringSupport"></a></p>
                     </div>
                 </div>
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
@@ -76,10 +68,8 @@
                     <div class="feature-icon p-4 mb-4">
                         <i class="fa fa-scroll fa-3x"></i>
                     </div>
-                    <h4 id="philosophyTitle" class="mb-4"></h4>
-                    <p id="philosophyDescription" class="mb-4">
-
-                    </p>
+                    <h4 class="mb-4" lang-attr="philosophyTitle"></h4>
+                    <p class="mb-4" lang-attr="philosophyDescription"></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
@@ -87,13 +77,8 @@
                     <div class="feature-icon p-4 mb-4">
                         <i class="fa fa-handshake fa-3x"></i>
                     </div>
-                    <h4 id="principleTitle" class="mb-4"></h4>
-                    <p id="principleDescription" class="mb-4">
-
-                    <p>
-                        <br>
-                    </p>
-                    </p>
+                    <h4 class="mb-4" lang-attr="principleTitle"></h4>
+                    <p class="mb-4" lang-attr="principleDescription"></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
@@ -101,16 +86,13 @@
                     <div class="feature-icon p-4 mb-4">
                         <i class="fa fa-thumbs-up fa-3x"></i>
                     </div>
-                    <h4 id="successTitle" class="mb-4"></h4>
-                    <p id="successDescription" class="mb-4">
-                        <br>
-                    </p>
+                    <h4 class="mb-4" lang-attr="successKeyTitle"></h4>
+                    <p class="mb-4" lang-attr="successKeyDescription"></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <!-- Feature End -->
 <!-- About Start -->
 <div class="container-fluid bg-light about pb-5">
@@ -118,11 +100,10 @@
         <div class="row g-5">
             <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="about-item-content bg-white rounded p-5 h-100">
-                    <h1 id="servicesLinkageTitle" class="display-4 mb-4"></h1>
-                    <p id="servicesLinkageDescription">
-                    </p>
+                    <h1 class="display-4 mb-4" lang-attr="linkageServicesTitle"></h1>
+                    <p lang-attr="linkageServicesDescription"></p>
                     <p>
-                        <a id="getStartedButton" class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#"></a>
+                        <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://wa.link/o63jb9" lang-attr="startButton"></a>
                     </p>
                 </div>
             </div>
@@ -132,7 +113,6 @@
                         <div class="col-12">
                             <div class="rounded bg-light">
                                 <img src="img/imagecontainer@2x.png" class="img-fluid rounded w-100" alt="">
-
                             </div>
                         </div>
                     </div>
@@ -159,12 +139,10 @@
             </div>
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
                 <div class="about-item-content bg-white rounded p-5 h-100">
-                    <h1 id="servicesInspectionTitle" class="display-4 mb-4"></h1>
-                    <p id="servicesInspectionDescription">
-
-                    </p>
+                    <h1 class="display-4 mb-4" lang-attr="inspectionServicesTitle"></h1>
+                    <p lang-attr="inspectionServicesDescription"></p>
                     <p>
-                        <a id="getStartedButton2" class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#"></a>
+                        <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://wa.link/o7lm2s" lang-attr="startButton"></a>
                     </p>
                 </div>
             </div>
@@ -178,11 +156,10 @@
         <div class="row g-5">
             <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="about-item-content bg-white rounded p-5 h-100">
-                    <h1 id="servicesTrainingTitle" class="display-4 mb-4"></h1>
-                    <p id="servicesTrainingDescription">
-                    </p>
+                    <h1 class="display-4 mb-4" lang-attr="trainingServicesTitle"></h1>
+                    <p lang-attr="trainingServicesDescription"></p>
                     <p>
-                        <a id="getStartedButton3" class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#"></a>
+                        <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://wa.link/gmamos" lang-attr="startButton"></a>
                     </p>
                 </div>
             </div>

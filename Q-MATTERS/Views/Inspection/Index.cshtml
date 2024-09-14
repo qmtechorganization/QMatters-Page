@@ -1,7 +1,7 @@
-﻿        <!-- Header Start -->
+﻿<!-- Header Start -->
 <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
-        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Servicios de Inspección</h4>
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s" lang-attr="inspectionHeader"></h4>
     </div>
 </div>
 <!-- Header End -->
@@ -11,10 +11,10 @@
         <div class="row g-5">
             <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="about-item-content bg-white rounded p-5 h-100">
-                    <h1 class="display-4 mb-4">Inspectores certificados, formados según las especificaciones del producto</h1>
-                    <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Supervisión Focalizada</p>
-                    <p>Informes enviados diariamente. Creados y revisados en el lugar, también pueden consultarse en la web de QM con previa solicitud.</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" asp-action="Index" asp-controller="Contact">Contáctanos</a>
+                    <h1 class="display-4 mb-4" lang-attr="inspectionTitle"></h1>
+                    <p class="text-dark"><i class="fa fa-check text-primary me-3"></i><span lang-attr="focusedSupervision"></span></p>
+                    <p lang-attr="dailyReports"></p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" asp-action="Index" asp-controller="Contact" lang-attr="contactButton"></a>
                 </div>
             </div>
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
@@ -51,14 +51,14 @@
                 <div class="bg-white rounded p-5 h-100">
                     <div class="row g-4 justify-content-center">
                         <div class="about-item-content bg-white rounded p-3 h-100">
-                            <h1 class="display-4 mb-4">Personal especializado en Retrabajo</h1>
+                            <h1 class="display-4 mb-4" lang-attr="specializedPersonnelTitle"></h1>
                         </div>
                         <div class="col-sm-6">
                             <div class="counter-item bg-light rounded p-3 h-100">
                                 <div class="feature-icon p-1 mb-4" style="color: #041635; margin-left: 75px;">
                                     <i class="fa fa-clock fa-3x"></i>
                                 </div>
-                                <h4 class="mb-0 text-dark text-center">Soporte 24/7</h4>
+                                <h4 class="mb-0 text-dark text-center" lang-attr="support247"></h4>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -66,7 +66,7 @@
                                 <div class="feature-icon p-1 mb-4" style="color: #041635; margin-left: 70px;">
                                     <i class="fa fa-toolbox fa-3x"></i>
                                 </div>
-                                <h4 class="mb-0 text-dark text-center">Enfoque en las especificaciones de ingeniería</h4>
+                                <h4 class="mb-0 text-dark text-center" lang-attr="engineeringFocus"></h4>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -74,7 +74,7 @@
                                 <div class="feature-icon p-1 mb-4" style="color: #041635; margin-left: 70px;">
                                     <i class="fa fa-people-carry fa-3x"></i>
                                 </div>
-                                <h4 class="mb-0 text-dark text-center">Supervisores con formación en Ingeniería</h4>
+                                <h4 class="mb-0 text-dark text-center" lang-attr="engineeringSupervisors"></h4>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -82,7 +82,7 @@
                                 <div class="feature-icon p-1 mb-4" style="color: #041635; margin-left: 70px;">
                                     <i class="fa fa-chalkboard-teacher fa-3x"></i>
                                 </div>
-                                <h4 class="mb-0 text-dark text-center">Instrucciones de Trabajo</h4>
+                                <h4 class="mb-0 text-dark text-center" lang-attr="workInstructions"></h4>
                             </div>
                         </div>
                     </div>

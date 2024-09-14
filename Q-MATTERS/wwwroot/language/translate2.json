@@ -1,0 +1,544 @@
+﻿{
+  "translate": [
+    {
+      "lang_attr": "carouselTitle",
+      "eng": "Quality Matters",
+      "esp": "Quality Matters"
+    },
+    {
+      "lang_attr": "carouselDescription",
+      "eng": "Integrated Quality Management and Liaison Services",
+      "esp": "Servicios de Calidad Integrada e Ingeniería de campo"
+    },
+    {
+      "lang_attr": "contactButton",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "whoWeAreTitle",
+      "eng": "Who We Are?",
+      "esp": "¿Quiénes somos?"
+    },
+    {
+      "lang_attr": "whoWeAreDescription",
+      "eng": "A team of bilingual professionals, from different backgrounds, capable of managing your projects.",
+      "esp": "Un grupo de profesionales bilingües, expertos en diferentes campos, capaces de administrar correctamente sus proyectos."
+    },
+    {
+      "lang_attr": "reputationBuilding",
+      "eng": "We are professionals with experience and solid knowledge on Quality, Manufacturing, Engineering, and Continuous Improvement.",
+      "esp": "Profesionales con experiencia y solido conocimiento en Calidad, Manufactura, Ingeniería, y Mejora Continua."
+    },
+    {
+      "lang_attr": "trainingImpact",
+      "eng": "Provide high quality high impact training for your people and your Company",
+      "esp": "Proporcionar entrenamiento de alta calidad y alto impacto para las personas y sus empresas."
+    },
+    {
+      "lang_attr": "inspectionSupport",
+      "eng": "Focused support on inspection for specific projects, including rework of material to engineering specs ",
+      "esp": "Apoyo enfocado en proyectos específicos de inspección, incluido re-trabajo de piezas según especificaciones."
+    },
+    {
+      "lang_attr": "engineeringSupport",
+      "eng": "Liaison service support",
+      "esp": "Servicio de Ingeniería de campo (enlace) "
+    },
+    {
+      "lang_attr": "philosophyTitle",
+      "eng": "Our Philosophy",
+      "esp": "Nuestra Filosofía"
+    },
+    {
+      "lang_attr": "philosophyDescription",
+      "eng": "Provide professional services and Training for our Customers, aiming for Core competence development from the source, as foundation of the Quality Culture",
+      "esp": "Proporcionar servicios profesionales y de entrenamiento, buscando desarrollar competencias básicas desde el origen, como base de la cultura de la calidad."
+    },
+    {
+      "lang_attr": "principleTitle",
+      "eng": "Our Principle",
+      "esp": "Nuestro Principio"
+    },
+    {
+      "lang_attr": "principleDescription",
+      "eng": "Promote Quality Management Integration Services as a key factor to our customer success",
+      "esp": "Promover la integración de los Servicios de Gestión de la Calidad como clave del éxito de los clientes."
+    },
+    {
+      "lang_attr": "successKeyTitle",
+      "eng": "Key to Success",
+      "esp": "Clave del Éxito"
+    },
+    {
+      "lang_attr": "successKeyDescription",
+      "eng": "Rapid understanding and response to Customer needs, as well as Professional support tailored to unique situations",
+      "esp": "Comprensión y respuesta rápidas a las necesidades del cliente, así como apoyo profesional adaptado a situaciones únicas."
+    },
+    {
+      "lang_attr": "linkageServicesTitle",
+      "eng": "Liaison Services",
+      "esp": "Servicios de Enlace"
+    },
+    {
+      "lang_attr": "linkageServicesDescription",
+      "eng": "Our team of experienced engineers has a proven track record of successfully completed projects focused on meeting engineering specifications. We offer excellent technical support and can negotiate with clients when necessary. Additionally, we excel in problem-solving and delivering effective solutions to ensure smooth project execution and client satisfaction. To ensure a smooth project execution and client satisfaction.",
+      "esp": "Nuestro equipo de ingenieros experimentados cuenta con un historial demostrado de proyectos completados con éxito y centrados en el cumplimiento de las especificaciones de ingeniería. Ofrecemos un excelente soporte técnico y podemos negociar con los clientes cuando sea necesario. Además, nos destacamos en la resolución de problemas y la entrega de soluciones eficaces para garantizar la ejecución del proyecto sin problemas y la satisfacción del cliente. Para garantizar una ejecución fluida del proyecto y la satisfacción del cliente."
+    },
+    {
+      "lang_attr": "inspectionServicesTitle",
+      "eng": "Inspection Services",
+      "esp": "Servicios de Inspección"
+    },
+    {
+      "lang_attr": "inspectionServicesDescription",
+      "eng": "We are able to provide full-service, turn-key teams or individual, specialized inspectors to address your specific needs. Our staff can be involved from day one or inserted “along the way” to improve the process. Our inspectors have significant, previous experience operating and maintaining similar assets. Bringing to each project a wealth of knowledge in multiple disciplines, industry codes, industry standards, and client-specific standards.",
+      "esp": "Podemos proporcionarle equipos completos o inspectores individuales especializados para satisfacer sus necesidades específicas. Nuestro personal puede participar desde el primer día o intercalarse «a lo largo del camino» para mejorar el proceso. Nuestros inspectores cuentan con una importante experiencia previa que opera y mantiene activos similares. Aportan a cada proyecto una riqueza de conocimientos en múltiples disciplinas, códigos industriales, normas industriales y normas específicas del cliente."
+    },
+    {
+      "lang_attr": "trainingServicesTitle",
+      "eng": "Training Services",
+      "esp": "Servicios de Capacitación"
+    },
+    {
+      "lang_attr": "trainingServicesDescription",
+      "eng": "Customized training tailored to each client's needs. Quality Matters assigns a Professional Trainer with proven experience. Training developed in both Spanish and English is available upon request. Internal Training Expert development can be created at the client's request. An additional budget will be required.",
+      "esp": "Formación personalizada adaptada a las necesidades de cada cliente. Quality Matters asigna un Formador Profesional con experiencia demostrada. Formación desarrollada en Español e Inglés está disponible bajo petición. Desarrollo de Expertos en Formación Interna puede ser desarrollado por requerimiento del cliente. Se requerirá un presupuesto adicional"
+    },
+    {
+      "lang_attr": "startButton",
+      "eng": "Let's Get Started",
+      "esp": "Comencemos"
+    },
+    {
+      "lang_attr": "inspectionHeader",
+      "eng": "Inspection Services",
+      "esp": "Servicios de Inspección"
+    },
+    {
+      "lang_attr": "inspectionTitle",
+      "eng": "Qualified inspectors, trained to your product specifications",
+      "esp": "Inspectores certificados, entrenados según las especificaciones del producto."
+    },
+    {
+      "lang_attr": "focusedSupervision",
+      "eng": "Focused Supervision",
+      "esp": "Supervisión enfocada"
+    },
+    {
+      "lang_attr": "dailyReports",
+      "eng": "Daily reports generation, developed and reviewed for accuracy onsite, also can be checked on the Q-Matters website if required",
+      "esp": "Informes enviados diariamente. Creados y revisados en el lugar, también pueden consultarse en la web de Q-Matters con previa solicitud."
+    },
+    {
+      "lang_attr": "contactButton",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "specializedPersonnelTitle",
+      "eng": "Specialized personnel on rework needs",
+      "esp": "Personal especializado en Retrabajo"
+    },
+    {
+      "lang_attr": "support247",
+      "eng": "24/7 Support",
+      "esp": "Soporte 24/7"
+    },
+    {
+      "lang_attr": "engineeringFocus",
+      "eng": "Focus on Engineering specifications",
+      "esp": "Enfoque en las especificaciones de ingeniería"
+    },
+    {
+      "lang_attr": "engineeringSupervisors",
+      "eng": "Engineering background supervisors",
+      "esp": "Supervisores grado en Ingeniería"
+    },
+    {
+      "lang_attr": "workInstructions",
+      "eng": "Work Instructions",
+      "esp": "Instrucciones de Trabajo"
+    },
+    {
+      "lang_attr": "linkageHeader",
+      "eng": "Liaison Services",
+      "esp": "Servicios de Enlace"
+    },
+    {
+      "lang_attr": "customerServiceTitle",
+      "eng": "Personalized onsite Liaison support for your customer",
+      "esp": "Atención al cliente personalizada mediante ingeniería de campo en sitio"
+    },
+    {
+      "lang_attr": "experiencedEngineers",
+      "eng": "Experienced Engineers.",
+      "esp": "Ingenieros Experimentados."
+    },
+    {
+      "lang_attr": "provenSuccess",
+      "eng": "Proven success history",
+      "esp": "Éxito demostrado en proyectos realizados."
+    },
+    {
+      "lang_attr": "appliedEngineering",
+      "eng": "Applied Engineering.",
+      "esp": "Ingeniería aplicada."
+    },
+    {
+      "lang_attr": "technicalFocus",
+      "eng": "Focus on technical specifications.",
+      "esp": "Enfoque en las especificaciones técnicas."
+    },
+    {
+      "lang_attr": "technicalSupport",
+      "eng": "Technical Support.",
+      "esp": "Soporte técnico."
+    },
+    {
+      "lang_attr": "clientNegotiations",
+      "eng": "Client negotiation on specific projects",
+      "esp": "Negociaciones con clientes sobre casos concretos."
+    },
+    {
+      "lang_attr": "problemResolution",
+      "eng": "Effective Problem Resolution",
+      "esp": "Resolución de problemas."
+    },
+    {
+      "lang_attr": "contactButton",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "contactHeaderTitle",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "contactSubTitle",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "contactMainTitle",
+      "eng": "If you require our services",
+      "esp": "Si requieres nuestros servicios"
+    },
+    {
+      "lang_attr": "formTitle",
+      "eng": "Send Your Message",
+      "esp": "Envía tu Mensaje"
+    },
+    {
+      "lang_attr": "formDescription",
+      "eng": "Do you have any questions or need more information about our services? We're here to help! Whether you're interested in our services, need support, or just want to learn more about what we do.",
+      "esp": "¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡Estamos aquí para ayudarte! Ya sea que estés interesado en nuestros servicios, necesites soporte, o simplemente quieras conocer más sobre lo que hacemos."
+    },
+    {
+      "lang_attr": "nameLabel",
+      "eng": "Name",
+      "esp": "Nombre"
+    },
+    {
+      "lang_attr": "emailLabel",
+      "eng": "Email",
+      "esp": "Correo"
+    },
+    {
+      "lang_attr": "phoneLabel",
+      "eng": "Phone",
+      "esp": "Teléfono"
+    },
+    {
+      "lang_attr": "companyLabel",
+      "eng": "Company Name",
+      "esp": "Nombre de tu Empresa"
+    },
+    {
+      "lang_attr": "subjectLabel",
+      "eng": "Subject",
+      "esp": "Asunto"
+    },
+    {
+      "lang_attr": "messageLabel",
+      "eng": "Message",
+      "esp": "Mensaje"
+    },
+    {
+      "lang_attr": "submitButton",
+      "eng": "Send Message",
+      "esp": "Enviar Mensaje"
+    },
+    {
+      "lang_attr": "addressLabel",
+      "eng": "Address",
+      "esp": "Dirección"
+    },
+    {
+      "lang_attr": "emailContactLabel",
+      "eng": "Email",
+      "esp": "Correo"
+    },
+    {
+      "lang_attr": "phoneContactLabel",
+      "eng": "Phone",
+      "esp": "Teléfono"
+    },
+    {
+      "lang_attr": "websiteLabel",
+      "eng": "Website",
+      "esp": "Página Web"
+    },
+    {
+      "lang_attr": "headerTitle",
+      "eng": "Training Services",
+      "esp": "Servicios de Capacitación"
+    },
+    {
+      "lang_attr": "expertContent",
+      "eng": "Expert matters development based on customer needs",
+      "esp": "Desarrollo de expertos según necesidades del cliente."
+    },
+    {
+      "lang_attr": "manualPreparation",
+      "eng": "Training Manual development",
+      "esp": "Elaboración de un manual de entrenamiento."
+    },
+    {
+      "lang_attr": "manualDelivery",
+      "eng": "Printed Manuals.",
+      "esp": "Manuales impresos."
+    },
+    {
+      "lang_attr": "participants",
+      "eng": "Participants: According to the client's needs.",
+      "esp": "Participantes: Según las necesidades del cliente."
+    },
+    {
+      "lang_attr": "trainingProgram",
+      "eng": "Onsite Training, outside or remote",
+      "esp": "Entrenamiento en instalaciones del cliente, fuera o remoto."
+    },
+    {
+      "lang_attr": "dates",
+      "eng": "Dates.",
+      "esp": "Fechas."
+    },
+    {
+      "lang_attr": "trainers",
+      "eng": "Trainers.",
+      "esp": "Capacitadores."
+    },
+    {
+      "lang_attr": "contactButton",
+      "eng": "Contact Us",
+      "esp": "Contáctanos"
+    },
+    {
+      "lang_attr": "servicesTitle",
+      "eng": "We offer Training Services",
+      "esp": "Ofrecemos servicios de Capacitación"
+    },
+    {
+      "lang_attr": "iatfTitle",
+      "eng": "IATF 16949",
+      "esp": "IATF 16949"
+    },
+    {
+      "lang_attr": "iatfDescription",
+      "eng": "Coaching in implementation, follow up and sustaining system.",
+      "esp": "Coaching in implementation, follow up and sustaining system."
+    },
+    {
+      "lang_attr": "requestButton",
+      "eng": "Request",
+      "esp": "Solicitar"
+    },
+    {
+      "lang_attr": "customerReqTitle",
+      "eng": "Customer Specific Requirement",
+      "esp": "Customer Specific Requirement"
+    },
+    {
+      "lang_attr": "customerReqDescription",
+      "eng": "Quality systems Gap Analysis vs Customer requirements",
+      "esp": "Quality systems Gap Analysis vs Customer requirements"
+    },
+    {
+      "lang_attr": "apqTitle",
+      "eng": "APQ/NPI",
+      "esp": "APQ/NPI"
+    },
+    {
+      "lang_attr": "apqDescription",
+      "eng": "Gate control for effective New Product Launch. Project Management",
+      "esp": "Gate control for effective New Product Launch. Project Management"
+    },
+    {
+      "lang_attr": "cqi8Title",
+      "eng": "CQI 8",
+      "esp": "CQI 8"
+    },
+    {
+      "lang_attr": "cqi8Description",
+      "eng": "Soldering System Assessment required by IATF 16949",
+      "esp": "Soldering System Assessment required by IATF 16949"
+    },
+    {
+      "lang_attr": "cqi17Title",
+      "eng": "CQI 17",
+      "esp": "CQI 17"
+    },
+    {
+      "lang_attr": "cqi17Description",
+      "eng": "Soldering System Assessment required by IATF 16949",
+      "esp": "Soldering System Assessment required by IATF 16949"
+    },
+    {
+      "lang_attr": "iso9000Title",
+      "eng": "ISO 9000",
+      "esp": "ISO 9000"
+    },
+    {
+      "lang_attr": "iso9000Description",
+      "eng": "Coaching in implementation, follow up and sustaining system.",
+      "esp": "Coaching in implementation, follow up and sustaining system."
+    },
+    {
+      "lang_attr": "iso19001Title",
+      "eng": "ISO 19001",
+      "esp": "ISO 19001"
+    },
+    {
+      "lang_attr": "iso19001Description",
+      "eng": "Guidelines for Quality Systems Audit.",
+      "esp": "Guidelines for Quality Systems Audit."
+    },
+    {
+      "lang_attr": "iso14001Title",
+      "eng": "ISO 14001",
+      "esp": "ISO 14001"
+    },
+    {
+      "lang_attr": "iso14001Description",
+      "eng": "Coaching in implementation, follow up and sustaining system",
+      "esp": "Coaching in implementation, follow up and sustaining system"
+    },
+    {
+      "lang_attr": "iso45001Title",
+      "eng": "ISO 45001",
+      "esp": "ISO 45001"
+    },
+    {
+      "lang_attr": "iso45001Description",
+      "eng": "Coaching in implementation, follow up and sustaining system",
+      "esp": "Coaching in implementation, follow up and sustaining system"
+    },
+    {
+      "lang_attr": "tl9000Title",
+      "eng": "TL 9000",
+      "esp": "TL 9000"
+    },
+    {
+      "lang_attr": "tl9000Description",
+      "eng": "Coaching in implementation, follow up and sustaining system.",
+      "esp": "Coaching in implementation, follow up and sustaining system."
+    },
+    {
+      "lang_attr": "ipcTitle",
+      "eng": "IPC 610, IPC 7711/7721",
+      "esp": "IPC 610, IPC 7711/7721"
+    },
+    {
+      "lang_attr": "ipcDescription",
+      "eng": "Electronics soldering assembly criteria. Evaluation of solder condition as well as rework management.",
+      "esp": "Electronics soldering assembly criteria. Evaluation of solder condition as well as rework management."
+    },
+    {
+      "lang_attr": "servicesHeader",
+      "eng": "Consulting Services",
+      "esp": "Servicios de Consultoría"
+    },
+    {
+      "lang_attr": "CservicesTitle",
+      "eng": "Consulting and Services",
+      "esp": "Y Servicios de Consultoría"
+    },
+    {
+      "lang_attr": "qualitySystemsTitle",
+      "eng": "Quality Systems",
+      "esp": "Sistemas de Calidad"
+    },
+    {
+      "lang_attr": "qualitySystemsDescription",
+      "eng": "Quality systems Gap Analysis vs ISO/IATF16949 Std.",
+      "esp": "Análisis de brechas de sistemas de calidad vs Std. ISO/IATF16949."
+    },
+    {
+      "lang_attr": "eightDTitle",
+      "eng": "8D",
+      "esp": "8D"
+    },
+    {
+      "lang_attr": "eightDDescription",
+      "eng": "Quality systems Gap Analysis vs Customer requirements",
+      "esp": "Análisis de brechas de sistemas de calidad vs requisitos del cliente."
+    },
+    {
+      "lang_attr": "problemSolvingTitle",
+      "eng": "Problem Solving",
+      "esp": "Solución de Problemas"
+    },
+    {
+      "lang_attr": "problemSolvingDescription",
+      "eng": "Integrated techniques for problem solving.",
+      "esp": "Técnicas integradas para la resolución de problemas."
+    },
+    {
+      "lang_attr": "managementSystemsTitle",
+      "eng": "Management Systems",
+      "esp": "Sistemas de Gestión"
+    },
+    {
+      "lang_attr": "managementSystemsDescription",
+      "eng": "Coaching for effective system administration.",
+      "esp": "Coaching para una administración efectiva del sistema."
+    },
+    {
+      "lang_attr": "leanManufacturingTitle",
+      "eng": "Lean Manufacturing",
+      "esp": "Lean Manufacturing"
+    },
+    {
+      "lang_attr": "leanManufacturingDescription",
+      "eng": "Methodology for elimination of 8 wastes, focusing on increasing productivity and efficiency",
+      "esp": "Metodología para la eliminación de 8 desperdicios, centrada en aumentar la productividad y la eficiencia."
+    },
+    {
+      "lang_attr": "shopFloorManagementTitle",
+      "eng": "Shop Floor Management",
+      "esp": "Gestión del Piso de Producción"
+    },
+    {
+      "lang_attr": "shopFloorManagementDescription",
+      "eng": "SQDC Floor effective follow up Operator development / Training Effective meetings.",
+      "esp": "Seguimiento efectivo del piso SQDC / Desarrollo de operadores / Formación Reuniones efectivas."
+    },
+    {
+      "lang_attr": "valueStreamManagementTitle",
+      "eng": "Value Stream Management",
+      "esp": "Gestión del Flujo de Valor"
+    },
+    {
+      "lang_attr": "valueStreamManagementDescription",
+      "eng": "Detailed analysis of supply chain and associated variables.",
+      "esp": "Análisis detallado de la cadena de suministro y variables asociadas."
+    },
+    {
+      "lang_attr": "requestButton",
+      "eng": "Request",
+      "esp": "Solicitar"
+    }
+  ]
+}

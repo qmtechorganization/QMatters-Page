@@ -80,7 +80,32 @@
                     <div class="navbar-nav mx-0 mx-lg-auto">
                         <a asp-action="Index" asp-controller="Home" class="nav-item nav-link active">Home</a>
                         <a asp-action="Index" asp-controller="Inspection" class="nav-item nav-link">Inspection </a>
-                        <a asp-action="Index" asp-controller="Services" class="nav-item nav-link">Training</a>
+                        <!--<a class="nav-item nav-link">Training</a>-->
+                        <div class="nav-item dropdown">
+                            <a asp-action="Index" asp-controller="Services" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Training</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">IATF 16949</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">Customer Specific Requirement</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">APQ/NPI</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">CQI 8</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">CQI 17</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">ISO 9000</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">ISO 19001</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">ISO 14001</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">ISO 45001</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">TL 9000</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">IPC 610, IPC 7711/7721</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">Quality Systems</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">8D</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">Problem Solving</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">Management Systems</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">Lean Manufacturing</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">Shop Floor Management</a>
+                                <a asp-action="Index" asp-controller="Services" class="dropdown-item">Value Stream Management</a>
+                            </div>
+                        </div>
                         <a asp-action="Index" asp-controller="Liaison" class="nav-item nav-link">Liaison</a>
                         <a asp-action="Index" asp-controller="Contact" class="nav-item nav-link">Contact</a>
                         <div class="dropdown ms-qm">
@@ -90,8 +115,8 @@
                                 </small>
                             </a>
                             <div class="dropdown-menu rounded">
-                                <a onclick="changeLanguage('en')" class="dropdown-item">English</a>
-                                <a onclick="changeLanguage('es')" class="dropdown-item">Spanish</a>
+                                <a id="btnIngles" class="dropdown-item">English</a>
+                                <a id="btnEspañol" class="dropdown-item">Spanish</a>
                             </div>
                         </div>
                         <div class="nav-btn px-3">

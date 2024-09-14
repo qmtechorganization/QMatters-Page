@@ -1,51 +1,70 @@
-﻿
-
-async function gettranslation  ()  {
-
-    const data = await fetch('/language/translations.json')
-    const t = await data.json()
-        
-    return t.translate
+﻿// Función para obtener las traducciones desde el archivo JSON
+async function getTranslation() {
+    const response = await fetch('/language/translate2.json');
+    const data = await response.json();
+    return data.translate;
 }
 
-
-
-const getLangSelected = (selec = null) => {
-    // Get local storge
-    //return document.getElementById('lang').value;
-
-    return selec && 'esp'
+// Función para obtener el idioma seleccionado desde las cookies
+const getLangFromCookie = () => {
+    const name = 'lang=';
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+        cookie = cookie.trim();
+        if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length);
+        }
+    }
+    return 'esp'; // Por defecto al español
 }
 
-async function renderLanguege(lselect) {
+// Función para guardar el idioma seleccionado en las cookies
+const setLangInCookie = (lang) => {
+    document.cookie = `lang=${lang}; path=/;`;
+}
 
-    const elements = document.querySelectorAll('[lang-attr]')
-
-    const sL = getLangSelected(lselect)
-
-    const transldd = await gettranslation()
-    console.log('todo x cuilpa de ;luis',transldd)
+// Función para actualizar el contenido de la página según el idioma
+async function renderLanguage(selectedLang) {
+    const elements = document.querySelectorAll('[lang-attr]');
+    const translations = await getTranslation();
+    const lang = selectedLang || getLangFromCookie();
 
     for (const el of elements) {
-        const trans = transldd.find(f => f.lang_attr == el.getAttribute('lang-attr'))
+        const translation = translations.find(t => t.lang_attr === el.getAttribute('lang-attr'));
+        if (translation) {
+            el.textContent = translation[lang];
+        }
+    }
 
-        console.log({ value: trans[lselect], trans, el, lselect })
-
-        if (trans)
-            el.textContent = trans[lselect]
+    // Actualizar el texto del elemento con el ID 'selectedLanguage'
+    const selectedLanguageElement = document.getElementById('selectedLanguage');
+    if (selectedLanguageElement) {
+        selectedLanguageElement.textContent = lang === 'esp' ? 'Español' : 'English';
     }
 }
 
+// Configura el idioma al cargar la página
+document.addEventListener('DOMContentLoaded', async () => {
+    await renderLanguage();
+});
 
-document.addEventListener('DOMContentLoaded',async () => {
-    console.log('Starting')
+// Manejo del cambio de idioma
+const handleLanguageChange = (newLang) => {
+    setLangInCookie(newLang);
+    renderLanguage(newLang);
+}
 
-    await renderLanguege()
-})
+// Asignar eventos a los botones
+document.getElementById('btnEspañol').addEventListener('click', () => {
+    handleLanguageChange('esp');
+});
+
+document.getElementById('btnIngles').addEventListener('click', () => {
+    handleLanguageChange('eng');
+});
+
 
 //document.getElementById('lang').addEventListener('change', renderLanguege)
-
-
 
 //$(document).ready(function () {
 //    $(".header-carousel").on('initialized.owl.carousel', function (event) {
@@ -141,11 +160,11 @@ document.addEventListener('DOMContentLoaded',async () => {
 //            document.getElementById('getStartedButton2').textContent = translations.buttons.get_started;
 //            document.getElementById('getStartedButton3').textContent = translations.buttons.get_started;
 
-//            // Actualiza los textos en la sección "Contact"
+//            //// Actualiza los textos en la sección "Contact"
 //            document.getElementById('contactHeaderTitle').textContent = translations.contact.header.title;
-//            document.getElementById('contactHeaderTitle2').textContent = translations.contact.header.title;
-//            document.getElementById('contactSection1Title').textContent = translations.contact.section_1.title;
-//            document.getElementById('contactMessage').textContent = translations.contact.message.question;
+//            //document.getElementById('contactHeaderTitle2').textContent = translations.contact.header.title;
+//            //document.getElementById('contactSection1Title').textContent = translations.contact.section_1.title;
+//            //document.getElementById('contactMessage').textContent = translations.contact.message.question;
 
 //            //var form = translations.contact.form;
 //            //document.getElementById('formName').placeholder = form.name;
@@ -182,32 +201,37 @@ document.addEventListener('DOMContentLoaded',async () => {
 
 
 
-////document.getElementById('reputation3').textContent = translations.about.reputation_3;
+//document.getElementById('reputation3').textContent = translations.about.reputation_3;
 
 
 
 
-////// Actualiza los textos en la sección "Inspection Services"
-////document.getElementById('inspectionServicesHeaderTitle').textContent = translations.inspection_services.header.title;
-////document.getElementById('inspectionServicesSection1Title').textContent = translations.inspection_services.section_1.title;
-////document.getElementById('inspectionServicesSection1Supervision').textContent = translations.inspection_services.section_1.supervision;
-////document.getElementById('inspectionServicesSection1Report').textContent = translations.inspection_services.section_1.report;
-////document.getElementById('inspectionServicesSection1ContactButton').textContent = translations.inspection_services.section_1.contact_button;
+//// Actualiza los textos en la sección "Inspection Services"
+//document.getElementById('inspectionServicesHeaderTitle').textContent = translations.inspection_services.header.title;
+//document.getElementById('inspectionServicesSection1Title').textContent = translations.inspection_services.section_1.title;
+//document.getElementById('inspectionServicesSection1Supervision').textContent = translations.inspection_services.section_1.supervision;
+//document.getElementById('inspectionServicesSection1Report').textContent = translations.inspection_services.section_1.report;
+//document.getElementById('inspectionServicesSection1ContactButton').textContent = translations.inspection_services.section_1.contact_button;
 
-////document.getElementById('inspectionServicesSection2Title').textContent = translations.inspection_services.section_2.title;
-////document.getElementById('inspectionServicesSection2Support247').textContent = translations.inspection_services.section_2.support_24_7;
-////document.getElementById('inspectionServicesSection2EngineeringSpecsFocus').textContent = translations.inspection_services.section_2.engineering_specs_focus;
-////document.getElementById('inspectionServicesSection2EngineeringTrainingSupervisors').textContent = translations.inspection_services.section_2.engineering_training_supervisors;
-////document.getElementById('inspectionServicesSection2WorkInstructions').textContent = translations.inspection_services.section_2.work_instructions;
+//document.getElementById('inspectionServicesSection2Title').textContent = translations.inspection_services.section_2.title;
+//document.getElementById('inspectionServicesSection2Support247').textContent = translations.inspection_services.section_2.support_24_7;
+//document.getElementById('inspectionServicesSection2EngineeringSpecsFocus').textContent = translations.inspection_services.section_2.engineering_specs_focus;
+//document.getElementById('inspectionServicesSection2EngineeringTrainingSupervisors').textContent = translations.inspection_services.section_2.engineering_training_supervisors;
+//document.getElementById('inspectionServicesSection2WorkInstructions').textContent = translations.inspection_services.section_2.work_instructions;
 
-////// Actualiza los textos en la sección "Linkage Services"
-////document.getElementById('linkageServicesHeaderTitle').textContent = translations.linkage_services.header.title;
-////document.getElementById('linkageServicesSection1Title').textContent = translations.linkage_services.section_1.title;
-////document.getElementById('linkageServicesSection1EngineersExperienced').textContent = translations.linkage_services.section_1.engineers_experienced;
-////document.getElementById('linkageServicesSection1ProvenSuccess').textContent = translations.linkage_services.section_1.proven_success;
-////document.getElementById('linkageServicesSection1AppliedEngineering').textContent = translations.linkage_services.section_1.applied_engineering;
-////document.getElementById('linkageServicesSection1TechnicalSpecsFocus').textContent = translations.linkage_services.section_1.technical_specs_focus;
-////document.getElementById('linkageServicesSection1TechnicalSupport').textContent = translations.linkage_services.section_1.technical_support;
-////document.getElementById('linkageServicesSection1ClientNegotiations').textContent = translations.linkage_services.section_1.client_negotiations;
-////document.getElementById('linkageServicesSection1ProblemResolution').textContent = translations.linkage_services.section_1.problem_resolution;
-////document.getElementById('linkageServicesSection1ContactButton').textContent = translations.linkage_services.section_1.contact_button;
+//// Actualiza los textos en la sección "Linkage Services"
+//document.getElementById('linkageServicesHeaderTitle').textContent = translations.linkage_services.header.title;
+//document.getElementById('linkageServicesSection1Title').textContent = translations.linkage_services.section_1.title;
+//document.getElementById('linkageServicesSection1EngineersExperienced').textContent = translations.linkage_services.section_1.engineers_experienced;
+//document.getElementById('linkageServicesSection1ProvenSuccess').textContent = translations.linkage_services.section_1.proven_success;
+//document.getElementById('linkageServicesSection1AppliedEngineering').textContent = translations.linkage_services.section_1.applied_engineering;
+//document.getElementById('linkageServicesSection1TechnicalSpecsFocus').textContent = translations.linkage_services.section_1.technical_specs_focus;
+//document.getElementById('linkageServicesSection1TechnicalSupport').textContent = translations.linkage_services.section_1.technical_support;
+//document.getElementById('linkageServicesSection1ClientNegotiations').textContent = translations.linkage_services.section_1.client_negotiations;
+//document.getElementById('linkageServicesSection1ProblemResolution').textContent = translations.linkage_services.section_1.problem_resolution;
+//document.getElementById('linkageServicesSection1ContactButton').textContent = translations.linkage_services.section_1.contact_button;
+
+
+
+
+
