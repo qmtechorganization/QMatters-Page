@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Manejo del cambio de idioma
 const handleLanguageChange = (newLang) => {
     setLangInCookie(newLang);
-    renderLanguage(newLang);
+    window.location.reload();  // Recargar la página
 }
 
 // Asignar eventos a los botones
@@ -62,6 +62,7 @@ document.getElementById('btnEspañol').addEventListener('click', () => {
 document.getElementById('btnIngles').addEventListener('click', () => {
     handleLanguageChange('eng');
 });
+
 
 
 //document.getElementById('lang').addEventListener('change', renderLanguege)
