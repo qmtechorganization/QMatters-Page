@@ -5,7 +5,6 @@ async function getTranslation() {
     return data.translate;
 }
 
-// Función para obtener el idioma seleccionado desde las cookies
 const getLangFromCookie = () => {
     const name = 'lang=';
     const cookies = document.cookie.split(';');
@@ -18,12 +17,10 @@ const getLangFromCookie = () => {
     return 'esp'; // Por defecto al español
 }
 
-// Función para guardar el idioma seleccionado en las cookies
 const setLangInCookie = (lang) => {
     document.cookie = `lang=${lang}; path=/;`;
 }
 
-// Función para actualizar el contenido de la página según el idioma
 async function renderLanguage(selectedLang) {
     const elements = document.querySelectorAll('[lang-attr]');
     const translations = await getTranslation();
@@ -36,22 +33,26 @@ async function renderLanguage(selectedLang) {
         }
     }
 
-    // Actualizar el texto del elemento con el ID 'selectedLanguage'
     const selectedLanguageElement = document.getElementById('selectedLanguage');
     if (selectedLanguageElement) {
         selectedLanguageElement.textContent = lang === 'esp' ? 'Español' : 'English';
     }
 }
 
-// Configura el idioma al cargar la página
 document.addEventListener('DOMContentLoaded', async () => {
     await renderLanguage();
 });
 
-// Manejo del cambio de idioma
 const handleLanguageChange = (newLang) => {
     setLangInCookie(newLang);
-    window.location.reload();  // Recargar la página
+    renderLanguage(newLang);
+
+    // Aquí cerramos el menú colapsado después de seleccionar el idioma
+    const navbarCollapse = document.getElementById('navbarCollapse');
+    if (navbarCollapse.classList.contains('show')) {
+        const collapse = new bootstrap.Collapse(navbarCollapse);
+        collapse.hide();
+    }
 }
 
 // Asignar eventos a los botones
@@ -62,6 +63,7 @@ document.getElementById('btnEspañol').addEventListener('click', () => {
 document.getElementById('btnIngles').addEventListener('click', () => {
     handleLanguageChange('eng');
 });
+
 
 
 

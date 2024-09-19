@@ -4456,6 +4456,12 @@ fieldset:disabled .btn {
     white-space: nowrap
 }
 
+@media (max-width: 1400px) {
+    .navbar-brand {
+        margin-right: 45px;
+    }
+}
+
 @media (max-width: 900px) {
     .navbar-brand {
         margin-right: 20px;

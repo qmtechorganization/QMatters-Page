@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <title>@ViewData["Title"] - Q_MATTERS</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 @*     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -83,7 +84,7 @@
                         <!--<a class="nav-item nav-link">Training</a>-->
                         <div class="nav-item dropdown">
                             <a asp-action="Index" asp-controller="Services" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Training</span>
+                                <span class="dropdown-toggle text-white">Training</span>
                             </a>
                             <div class="dropdown-menu">
                                 <a asp-action="Index" asp-controller="Services" class="dropdown-item">IATF 16949</a>
@@ -109,7 +110,7 @@
                         <a asp-action="Index" asp-controller="Liaison" class="nav-item nav-link">Liaison</a>
                         <a href="https://tech.q-matters.com" class="nav-item nav-link active">Software</a>
                         <a asp-action="Index" asp-controller="Contact" class="nav-item nav-link">Contact</a>
-                        <div class="dropdown ms-qm">
+                        <div class="nav-item dropdown">
                             <a class="dropdown-toggle text-white" data-bs-toggle="dropdown">
                                 <small>
                                     <i class="fas fa-globe-europe text-white me-2"></i><i id="selectedLanguage"></i>
