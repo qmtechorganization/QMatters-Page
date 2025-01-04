@@ -1,4 +1,11 @@
 ﻿<!-- Header Start -->
+
+<style>
+    #honeypot {
+    display: none;
+}
+
+</style>
 <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
         <h4 id="contactHeaderTitle" class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s" lang-attr="contactHeaderTitle"></h4>
@@ -27,49 +34,51 @@
                     <form action="/Contact/SendContactEmail" method="POST">
                         <div class="row g-3">
                             <input type="hidden" name="access_key" value="97e0aedb-8570-4180-a3fc-723f43989ace">
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="name" name="name" placeholder="Nombre">
-                                    <label for="name" lang-attr="nameLabel"></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0" id="email" name="email" placeholder="Correo">
-                                    <label for="email" lang-attr="emailLabel"></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating">
-                                    <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Telefono">
-                                    <label for="phone" lang-attr="phoneLabel"></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="project" name="company" placeholder="Empresa">
-                                    <label for="project" lang-attr="companyLabel"></label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Asunto">
-                                    <label for="subject" lang-attr="subjectLabel"></label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height: 120px"></textarea>
-                                    <label for="message" lang-attr="messageLabel"></label>
-                                </div>
+                            <!-- Honeypot Field -->
+                            <input type="text" name="honeypot" id="honeypot" style="display:none;">
 
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="name" name="name" placeholder="Nombre" required>
+                                    <label for="name">Nombre</label>
+                                </div>
                             </div>
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control border-0" id="email" name="email" placeholder="Correo" required>
+                                    <label for="email">Correo</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Teléfono" pattern="^\+?[0-9\s\-\(\)]{7,15}$" required>
+                                    <label for="phone">Teléfono</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="company" name="company" placeholder="Empresa">
+                                    <label for="company">Empresa</label>
+                                </div>
+                            </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary w-100 py-3" lang-attr="submitButton"></button>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Asunto" required>
+                                    <label for="subject">Asunto</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control border-0" placeholder="Deja tu mensaje aquí" id="message" name="message" style="height: 120px" required></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 py-3">Enviar</button>
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
             <div class="col-12">
@@ -82,7 +91,7 @@
                                 </div>
                                 <div>
                                     <h4 lang-attr="addressLabel"></h4>
-                                    <p class="mb-0" lang-attr="addressValue"></p>
+                                    <p class="mb-0" lang-attr="addressValue">Reynosa, Tamaulipas</p>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +102,7 @@
                                 </div>
                                 <div>
                                     <h4 lang-attr="emailContactLabel"></h4>
-                                    <p class="mb-0" lang-attr="emailContactValue">111</p>
+                                    <p class="mb-0" lang-attr="emailContactValue">contact@q-matters.com</p>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +113,7 @@
                                 </div>
                                 <div>
                                     <h4 lang-attr="phoneContactLabel"></h4>
-                                    <p class="mb-0" lang-attr="phoneContactValue"></p>
+                                    <p class="mb-0" lang-attr="phoneContactValue">+52 (899)-9592-327</p>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +124,7 @@
                                 </div>
                                 <div>
                                     <h4 lang-attr="websiteLabel"></h4>
-                                    <p class="mb-0" lang-attr="websiteValue"></p>
+                                    <p class="mb-0" lang-attr="websiteValue">https://q-matters.com/</p>
                                 </div>
                             </div>
                         </div>
